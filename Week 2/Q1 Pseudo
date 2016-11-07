@@ -1,0 +1,13 @@
+
+
+FUNCTION HPerfSquare(num1):
+
+	IF num1 > 0 DO
+		PerfSquare <- num1 POW (1/2)
+		PerfSquare <- PerfSquare - (PerfSquare MOD 1)
+		PerfSquare <- PerfSquare POW 2
+
+	IF num1 >= 0 DO
+		NOTHING
+s
+	RETURN PerfSquare
