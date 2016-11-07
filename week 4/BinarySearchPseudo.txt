@@ -1,0 +1,20 @@
+FUNCTION binarySearch with parameters val1, val2 and List
+
+	first <- 0
+	last <- (length of List -1)
+	fount <- False
+
+	WHILE LOOP first <= last and NOT found DO
+		mid <- ((first+last)/2)
+		IF (List[mid] <= val2) and (List[mid] >= val1) DO
+			found = True
+		ELSE DO
+			IF (val1 < List[mid]) DO
+				last <- mid - 1
+			ELSE DO
+				first <- mid + 1
+	
+	IF found = True DO
+		PRINT "Number Found"
+	ELSE DO
+		PRINT "Number not found" 
