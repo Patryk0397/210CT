@@ -1,0 +1,11 @@
+FUNCTION prime with Parameters and counter <- 2
+	IF n = 0 DO
+		RETURN True
+	ELSE IF n = 1 DO
+		RETURN True
+	ELSE IF n = counter DO
+		RETURN True
+	ELSE IF (n MOD counter) = 0 DO
+		RETURN False
+	ELSE DO
+		RETURN FUNCTION PRIME CALL with parameters n and counter <- +1

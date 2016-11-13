@@ -1,0 +1,12 @@
+FUNCTION reverse
+	 x <- USER INPUT
+	NEW LIST strList <- LIST of characters in string x
+	Counter <- -1
+	NEW LIST revList <- EMPTY LIST
+	
+	FOR LOOP through strList
+	APPEND strList[Counter] to revList
+	Counter <- +1
+
+	Convert revList to a string
+	PRINT the string

@@ -1,0 +1,22 @@
+FUNCTION main
+	string <- USER INPUT
+	convert string to list
+	counter <- 0
+	PRINT FUNCTION CALL vowelSearch with parameters string and counter
+
+FUNCTION vowelSearch with parameters string and counter
+	vowels (LIST) <- 'a','e','i','o','u'
+	
+	WHILE LOOP counter < Length of string
+		FOR LOOP (i) loops through vowels list
+			IF i is in vowels DO
+				REMOVE i from string
+				FUNCTION CALL with parameters string and counter
+			ELSE DO
+				counter <- +1
+	
+	finalString <- empty string
+	FOR LOOP (i) loops through string
+		finalString <- +i
+
+	RETURN finalString
