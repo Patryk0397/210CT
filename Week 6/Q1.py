@@ -38,21 +38,21 @@ def in_order(tree):
     finished = False
 
 
-    while (finished == False):
+    while (finished == False):  #Keeps the loop going until the else statement
 
-        if tree != None:
-            stack.append(tree)
+        if tree != None:        #If tree isnt empty
+            stack.append(tree)  #aappend the root node to the stack
 
-            tree = tree.left
+            tree = tree.left    #pointer goes to the left value
 
         else:
 
-            if (len(stack) > 0):
-                tree = stack.pop()
-                print(tree.value)
-                tree = tree.right
+            if (len(stack) > 0):#if the length of the stack is more than 0
+                tree = stack.pop()#pop the most recent value from stack
+                print(tree.value)#and print it
+                tree = tree.right#pointer goes to the right value
             else:
-                finished = True
+                finished = True#if stack is empty, finish the loop
 
     
 
