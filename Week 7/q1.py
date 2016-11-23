@@ -11,7 +11,7 @@ class Graph:
             
             
 
-    def addVertex(self,n):              #function adds a vertice to the vertices list
+    def addVertex(self,n):              #function adds a vertex to the vertices list
         self.vertices.append(n)
 
 
@@ -26,7 +26,7 @@ if __name__ == "__main__":
     g.addEdge(3,9)
     g.addEdge(5,9)
     print(g.vertices, g.edges)
-    g.DFS(1)
+    
 
     
     
