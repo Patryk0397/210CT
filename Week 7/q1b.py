@@ -18,34 +18,37 @@ class graph:
         for key in self.dictionary:
             print(key, ':', self.dictionary[key])
 
-    def DFS(self, start):
+    def DFS(self, vertex):
         
         self.visited = []
-        self.currentValue = None
-        self.currentNode = None
+        self.stack= []
 
-        self.startNode = start
+        self.stack.append(vertex)
 
-        if self.startNode in self.dictionary and self.currentValue == None:
-            print("current : ", self.startNode)
-            self.currentValue = self.dictionary[self.startNode]
-            self.visited.append(self.startNode)
+        while self.stack != []:
+            u = self.stack.pop()
+            if u not in self.visited:
+                self.visited.append(u)
+                for edge in self.dictionary[u]:
+                    self.stack.append(edge)
+        print(self.visited)
+        return(self.visited)
 
-        for i in self.currentValue:
-            print("Current value =", i)
-            print('d',self.currentValue)
-            if i not in self.visited:
-                self.currentNode = i
-                self.visited.append(self.currentNode)
-                print('hi',self.currentNode)
-                self.currentValue = self.dictionary[self.currentNode]
-                print(i)
-                print('v',self.currentValue)
-            elif i in self.visited:
-                pass
-                
+    def BFS(self,vertex):
 
-        print('lol',self.visited)
+        self.q = []
+        self.visited = []
+
+        self.q.insert(0, vertex)
+
+        while self.q != []:
+            u = self.q.pop()
+            if u not in self.visited:
+                self.visited.append(u)
+                for edge in self.dictionary[u]:
+                    self.q.insert(0,edge)
+        print (self.visited)
+       
         
 
 if __name__ == '__main__':
@@ -68,5 +71,6 @@ if __name__ == '__main__':
     g.addEdge(9,8)
     g.printDict()
     g.DFS(7)
+    g.BFS(7)
 
         
