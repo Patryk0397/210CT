@@ -4,8 +4,8 @@ def removeVowels(counter=0):
     
     if counter < len(vowels):
         if vowels[counter] in word:
-            word.remove(vowels[counter])
-            removeVowels(counter)
+            word.remove(vowels[counter])    #remove the vowel from word
+            removeVowels(counter)           #looks for another instance of this vowel
         else:
             counter += 1
             removeVowels(counter)
