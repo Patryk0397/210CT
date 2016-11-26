@@ -1,4 +1,4 @@
-FUNCTION prime with Parameters and counter <- 2
+FUNCTION prime with Parameters n and counter <- 2
 	IF n = 0 DO
 		RETURN True
 	ELSE IF n = 1 DO

@@ -18,3 +18,5 @@ def trailing():
     print ("There are ", trailing, "zeros") #(1)
 
 trailing()
+
+#Program has a Big O Notation of O(N*N)

@@ -1,0 +1,1 @@
+DFS traversal: [7, 9, 8, 6] 

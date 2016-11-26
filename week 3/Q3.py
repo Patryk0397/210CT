@@ -1,27 +1,20 @@
-def main():
-    string = input("Please input a string: ")
-    counter = 0
-    ChangeString(string,counter)
-    print (ChangeString(string,counter))
-
+def removeVowels(counter=0):
     
-def ChangeString(string,counter):
     vowels = ['a','e','i','o','u']
-
-
-    if counter < 5:
-        for i in string:
-            if i == vowels[counter]:
-                string.remove(i)
-                ChangeString(string,counter)
-            else:
-                counter += 1
-                ChangeString(string,counter)
+    
+    if counter < len(vowels):
+        if vowels[counter] in word:
+            word.remove(vowels[counter])
+            removeVowels(counter)
+        else:
             counter += 1
+            removeVowels(counter)
 
-        return string
-                
-                
-    
-main()
-    
+        return(word)
+
+
+if __name__ == '__main__':
+    word = input('Word: ')
+    word = list(word)
+
+    removeVowels()
