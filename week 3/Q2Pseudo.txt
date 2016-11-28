@@ -8,4 +8,4 @@ FUNCTION prime with Parameters n and counter <- 2
 	ELSE IF (n MOD counter) = 0 DO
 		RETURN False
 	ELSE DO
-		RETURN FUNCTION PRIME CALL with parameters n and counter <- +1
+		RETURN FUNCTION CALL PRIME with parameters n and counter <- +1
