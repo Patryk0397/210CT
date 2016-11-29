@@ -1,0 +1,24 @@
+FUNCTION Addition with Parameters Matrix1 and Matrix2:
+	FOR x in range FROM 0 to length of Matrix1 DO
+		FOR y in range FROM 0 to length of Matrix2 INDEX 0 DO
+			sum[x][y] <- Matrix1[x][y]+Matrix2[x][y]
+	RETURN sum
+
+FUNCTION Subtraction with Parameters Matrix1 and Matrix2:
+	FOR x in range FROM 0 to length of Matrix1 DO
+		for y in range FROM 0 to length of Matrix2 INDEX 0 DO
+			sum[x][y] <- Matrix1[x][y] - Matrix2[x][y]
+	RETURN sum
+
+FUNCTION Multiplication with Parameters Matrix1 and Matrix2:
+	FOR X in range from 0 to length of Matrix1 DO:
+		For Y in range from 0 to length of Matrix2 INDEX 0 DO
+			FOR Z in Matrix2 DO
+				result[X][Y] <- (result[X][Y]) + (Matrix1[X][Z] * Matrix2[Z][Y])
+	RETURN result
+
+
+Matrix1 <- User Input
+Matrix2 <- UserInput
+sum <- EMPTY LIST
+result <- EMPTY LIST

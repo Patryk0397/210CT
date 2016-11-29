@@ -41,7 +41,7 @@ def in_order(tree):
     while (finished == False):  #Keeps the loop going until the else statement
 
         if tree != None:        #If tree isnt empty
-            stack.append(tree)  #aappend the root node to the stack
+            stack.append(tree)  #append the root node to the stack
 
             tree = tree.left    #pointer goes to the left value
 
