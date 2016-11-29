@@ -6,8 +6,7 @@ class graph:
     def addVertex(self,vertex):
         if vertex not in self.dictionary:   #If input vertex isnt it dictionary it adds it
             self.dictionary[vertex] = []
-        else:
-            pass                            #If it is it does nothing and ignores it
+
         
 
     def addEdge(self,vertex,edge):          #Adds an edge to the graph using 2 points
