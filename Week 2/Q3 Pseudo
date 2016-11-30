@@ -22,3 +22,5 @@ Matrix1 <- User Input
 Matrix2 <- UserInput
 sum <- EMPTY LIST
 result <- EMPTY LIST
+
+The worst case scenario for A = B*C-2(B+C) is (n^3) because you have to use 3 loops when multiplying
